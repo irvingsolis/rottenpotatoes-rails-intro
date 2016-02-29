@@ -133,3 +133,31 @@ Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd81
 
 
 Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-28 20:56:57 -0600
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 03:22:34 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (32.9ms)
+Completed 200 OK in 591ms (Views: 553.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/default.self-88018f3403c207317feb94711b43b951f2a743a79f77ccecd4dcb2ed10f4881f.css?body=1" for 127.0.0.1 at 2016-02-29 03:22:35 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-29 03:22:35 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-29 03:22:35 -0600
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 03:26:11 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (129.8ms)
+Completed 200 OK in 2280ms (Views: 2181.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/default.self-4b6eba1106ae914dacea1b7b8602184389af000a80a77bb3575242ec3b22faa7.css?body=1" for 127.0.0.1 at 2016-02-29 03:26:15 -0600
