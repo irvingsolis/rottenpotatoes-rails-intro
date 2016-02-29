@@ -161,3 +161,25 @@ Completed 200 OK in 2280ms (Views: 2181.0ms | ActiveRecord: 4.7ms)
 
 
 Started GET "/assets/default.self-4b6eba1106ae914dacea1b7b8602184389af000a80a77bb3575242ec3b22faa7.css?body=1" for 127.0.0.1 at 2016-02-29 03:26:15 -0600
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 03:56:35 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (31.7ms)
+Completed 200 OK in 502ms (Views: 479.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 03:56:43 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-29 03:56:48 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 420ms (Views: 413.0ms | ActiveRecord: 2.6ms)
