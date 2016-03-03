@@ -183,3 +183,915 @@ Processing by MoviesController#index as HTML
   [1m[35mMovie Load (2.6ms)[0m  SELECT "movies".* FROM "movies"
   Rendered movies/index.html.haml within layouts/application (31.0ms)
 Completed 200 OK in 420ms (Views: 413.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 04:47:14 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 100ms (ActiveRecord: 2.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:14:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.2ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 04:54:14 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 175ms (ActiveRecord: 4.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:14:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (83.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (34.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (258.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (3.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (148.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (324.4ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 04:59:06 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 45ms (ActiveRecord: 5.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:14:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (86.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (34.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (254.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (148.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (297.4ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 05:02:01 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 16ms (ActiveRecord: 2.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (68.4ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 05:02:03 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 7ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (28.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (66.1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 05:02:04 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 7ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (77.2ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 05:02:06 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 10ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (34.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (69.1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 05:10:15 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.8ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 24ms (ActiveRecord: 1.8ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (81.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (32.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (245.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (3.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (148.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (296.5ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 05:10:20 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 27ms (ActiveRecord: 1.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (80.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (33.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (245.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (3.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (145.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (294.1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 05:14:38 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 45ms (ActiveRecord: 5.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (87.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (33.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (253.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (3.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (146.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (293.2ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-02-29 05:14:46 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 48ms (ActiveRecord: 1.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (81.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (33.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (246.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (3.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (154.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (301.6ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-03-03 14:32:30 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 120ms (ActiveRecord: 1.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (93.7ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-03-03 14:39:31 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 46ms (ActiveRecord: 1.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (77.6ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-03-03 15:15:20 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 46ms (ActiveRecord: 1.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (78.9ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-03-03 15:15:23 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 9ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (74.1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-03-03 15:15:26 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 17ms (ActiveRecord: 0.8ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>nil}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:15:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (75.9ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-03-03 15:33:17 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.haml within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 7 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    11: %table#movies
+    12:   %thead
+    13:     %tr
+    14:        %th{class: @title_hilite}= link_to 'Movie Title', movies_path(sort: 'title'), id: 'title_header'
+    15:       %th Rating
+    16:       %th{class: @release_hilite}= link_to 'Release Date', movies_path(sort: 'release_date'), id: 'release_date_header'
+    17:       %th More Info
+  app/views/movies/index.html.haml:14
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (44.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (77.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-03-03 15:43:44 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (35.4ms)
+Completed 200 OK in 712ms (Views: 686.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/default.self-b46e9d31c7f73e777a4599811c748fc68c08ec1875f64c3e11d4a5f0ba44f2c2.css?body=1" for 127.0.0.1 at 2016-03-03 15:43:45 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 15:43:45 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2016-03-03 15:43:45 -0600
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2016-03-03 15:43:45 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 15:43:45 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 15:43:45 -0600
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 15:43:51 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 24ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>"title", :conditions=>["rating IN (?)", ["G", "PG", "PG-13", "R"]]}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:33:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (35.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (76.3ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 15:43:52 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 8ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>"title", :conditions=>["rating IN (?)", ["G", "PG", "PG-13", "R"]]}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:33:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (72.5ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 15:47:52 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/irving/rottenpotatoes-rails-intro/app/controllers/movies_controller.rb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+                           :order session[:sort],
+                                         ^
+/home/irving/rottenpotatoes-rails-intro/app/controllers/movies_controller.rb:35: syntax error, unexpected tLABEL, expecting '='
+                           conditions: ["rating IN (?)", @ratings])
+                                      ^
+/home/irving/rottenpotatoes-rails-intro/app/controllers/movies_controller.rb:35: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/movies_controller.rb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/controllers/movies_controller.rb:35: syntax error, unexpected tLABEL, expecting '='
+  app/controllers/movies_controller.rb:35: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (22.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (11.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (91.0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 15:48:27 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 28ms (ActiveRecord: 1.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>"title", :conditions=>["rating IN (?)", ["G", "PG", "PG-13", "R"]]}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:33:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (9.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (84.3ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 15:50:17 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 13ms (ActiveRecord: 1.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>"title", :conditions=>["rating IN (?)", ["G", "PG", "PG-13", "R"]]}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:26:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (35.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (72.3ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 15:50:19 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" IN (NULL, NULL)
+Completed 404 Not Found in 24ms (ActiveRecord: 1.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Movies with 'id': (all, {:order=>"title", :conditions=>["rating IN (?)", ["G", "PG", "PG-13", "R"]]}) (found 0 results, but was looking for 2)):
+  app/controllers/movies_controller.rb:26:in `index'
+
+
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.6ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/irving/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (74.7ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-03-03 16:00:35 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (40.1ms)
+Completed 200 OK in 797ms (Views: 788.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:00:38 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (20.3ms)
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2016-03-03 16:00:40 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 89ms (Views: 86.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2016-03-03 16:00:42 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2016-03-03 16:00:43 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (1.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 170ms (Views: 165.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:00:44 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (1.4ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 115ms (Views: 110.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2016-03-03 16:00:47 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (1.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (26.8ms)
+Completed 200 OK in 237ms (Views: 231.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:00:50 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 106ms (Views: 98.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2016-03-03 16:00:53 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 103ms (Views: 100.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:02:39 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.9ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (34.6ms)
+Completed 200 OK in 143ms (Views: 139.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2016-03-03 16:02:43 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (1.8ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (31.3ms)
+Completed 200 OK in 229ms (Views: 220.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2016-03-03 16:05:50 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (30.9ms)
+Completed 200 OK in 140ms (Views: 138.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/default.self-b46e9d31c7f73e777a4599811c748fc68c08ec1875f64c3e11d4a5f0ba44f2c2.css?body=1" for 127.0.0.1 at 2016-03-03 16:05:50 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 16:05:50 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2016-03-03 16:05:50 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 16:05:50 -0600
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2016-03-03 16:05:50 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 16:05:50 -0600
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2016-03-03 16:05:53 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 108ms (Views: 105.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/default.self-b46e9d31c7f73e777a4599811c748fc68c08ec1875f64c3e11d4a5f0ba44f2c2.css?body=1" for 127.0.0.1 at 2016-03-03 16:05:53 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 16:05:53 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2016-03-03 16:05:53 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 16:05:53 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 16:05:53 -0600
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2016-03-03 16:05:53 -0600
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:05:55 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 99ms (Views: 96.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 16:05:57 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY release_date ASC[0m
+  Rendered movies/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 98ms (Views: 95.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:06:00 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 109ms (Views: 106.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 16:06:03 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY release_date ASC[0m
+  Rendered movies/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 90ms (Views: 88.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:06:04 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 92ms (Views: 89.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 16:06:08 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY release_date ASC[0m
+  Rendered movies/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 88ms (Views: 85.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:06:09 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 111ms (Views: 108.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 16:06:11 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY release_date ASC[0m
+  Rendered movies/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 90ms (Views: 87.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:06:13 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 89ms (Views: 86.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 16:06:14 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY release_date ASC[0m
+  Rendered movies/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:06:16 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 16:06:18 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[36mMovie Load (1.5ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY release_date ASC[0m
+  Rendered movies/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 117ms (Views: 114.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:06:20 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY title ASC
+  Rendered movies/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 87ms (Views: 84.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:07:17 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY title ASC[0m
+  Rendered movies/index.html.haml within layouts/application (31.1ms)
+Completed 200 OK in 118ms (Views: 110.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/default.self-b46e9d31c7f73e777a4599811c748fc68c08ec1875f64c3e11d4a5f0ba44f2c2.css?body=1" for 127.0.0.1 at 2016-03-03 16:07:17 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-03-03 16:07:17 -0600
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2016-03-03 16:07:17 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-03 16:07:17 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-03 16:07:17 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2016-03-03 16:07:17 -0600
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 16:07:19 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date ASC
+  Rendered movies/index.html.haml within layouts/application (20.4ms)
+Completed 200 OK in 160ms (Views: 157.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:07:21 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (1.4ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY title ASC[0m
+  Rendered movies/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 88ms (Views: 85.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 16:07:23 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[35mMovie Load (0.9ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date ASC
+  Rendered movies/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 87ms (Views: 84.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:07:25 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY title ASC[0m
+  Rendered movies/index.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 98ms (Views: 95.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 16:07:27 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date ASC
+  Rendered movies/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 94ms (Views: 91.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 16:07:28 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY title ASC[0m
+  Rendered movies/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?sort=release" for 127.0.0.1 at 2016-03-03 17:25:51 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release"}
+  [1m[35mMovie Load (1.6ms)[0m  SELECT "movies".* FROM "movies"  ORDER BY release_date ASC
+  Rendered movies/index.html.haml within layouts/application (21.8ms)
+Completed 200 OK in 134ms (Views: 129.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2016-03-03 17:25:54 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (1.1ms)[0m  [1mSELECT "movies".* FROM "movies"  ORDER BY title ASC[0m
+  Rendered movies/index.html.haml within layouts/application (17.0ms)
+Completed 200 OK in 105ms (Views: 101.1ms | ActiveRecord: 1.1ms)
